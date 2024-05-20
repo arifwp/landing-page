@@ -1,0 +1,16 @@
+.text_white {
+ color: white;   
+}
+
+.title {
+    font-size: 72px;
+    color: white;
+}
+
+.img_sponsor {
+    display: block;
+  max-width:130px;
+  max-height:65px;
+  width: auto;
+  height: auto;
+}
