@@ -8,8 +8,8 @@ export const navs = [
       label: "Tentang",
     },
     {
-      link: "#eventsSection",
-      label: "Event",
+      link: "#scheduleSection",
+      label: "Jadwal",
     },
     {
       link: "#contactSection",
