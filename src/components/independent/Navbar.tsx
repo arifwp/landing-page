@@ -16,7 +16,7 @@ import {
   Wrap,
   useDisclosure,
 } from "@chakra-ui/react";
-import { RiMenu4Line } from "@remixicon/react";
+import { RiMenu3Line } from "@remixicon/react";
 import { HashLink } from "react-router-hash-link";
 import { event } from "../../data/event";
 import { navs } from "../../data/nav-list";
@@ -31,13 +31,17 @@ const Navbar = () => {
       w={"100%"}
       justify={"space-between"}
       px={[5, null, 8]}
-      py={6}
+      py={4}
       position="fixed"
       bg="rgba(0, 0 ,0 ,0.5)"
-      zIndex={2}
+      zIndex={999}
     >
       <Box>
-        <Text color="white" fontSize={{ base: "12px", md: "24px", lg: "32px" }}>
+        <Text
+          color="white"
+          as={"b"}
+          fontSize={{ base: "16px", md: "24px", lg: "32px" }}
+        >
           LaLaLa Fest
         </Text>
       </Box>
@@ -54,11 +58,19 @@ const Navbar = () => {
         </HStack>
       )}
 
-      {sw < 768 && (
+      {sw <= 640 && (
         <>
           <IconButton
             aria-label="nav-button"
-            icon={<Icon as={RiMenu4Line} fontSize={20} onClick={onOpen} />}
+            bgColor={"transparent"}
+            icon={
+              <Icon
+                as={RiMenu3Line}
+                color={"white"}
+                fontSize={20}
+                onClick={onOpen}
+              />
+            }
           />
           <Drawer onClose={onClose} isOpen={isOpen} size={"xs"}>
             <DrawerOverlay />
