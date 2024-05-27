@@ -1,4 +1,14 @@
-export const event = {
+interface Event {
+    eventName: string,
+    eventNameWithYear: string,
+    eventLogo: string,
+    eventTag: string,
+    eventDescription: string, 
+    eventDate: string,
+    videoUrl: string,
+}
+
+export const event : Event = {
     eventName: 'LaLaLa Fest',
     eventNameWithYear: "LaLaLa Fest 2024",
     eventLogo: '/images/sponsors/coffe.png',
