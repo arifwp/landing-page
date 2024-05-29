@@ -5,10 +5,6 @@ interface NavItem {
 
 export const navs: Array<NavItem> = [
   {
-    link: "#homeSection",
-    label: "Home",
-  },
-  {
     link: "#aboutSection",
     label: "Tentang",
   },
