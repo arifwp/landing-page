@@ -35,11 +35,13 @@ const Navbar = () => {
       position="fixed"
       bg="rgba(0, 0 ,0 ,0.5)"
       zIndex={999}
+      backdropFilter="auto"
+      backdropBlur={"2px"}
     >
       <Box>
         <Text
           color="white"
-          as={"b"}
+          fontWeight={"bold"}
           fontSize={{ base: "16px", md: "24px", lg: "32px" }}
         >
           LaLaLa Fest
@@ -50,7 +52,12 @@ const Navbar = () => {
         <HStack>
           {navs.map((nav, i) => (
             <HashLink to={nav.link} key={i}>
-              <Button key={i} colorScheme="red" variant="ghost">
+              <Button
+                key={i}
+                colorScheme="red"
+                variant="ghost"
+                fontWeight={"semibold"}
+              >
                 {nav.label}
               </Button>
             </HashLink>
