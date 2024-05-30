@@ -1,22 +1,27 @@
-import { Box } from "@chakra-ui/react";
+import { Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
+import ContactWhatsapp from "../components/ContactWhatsapp";
+import EventInfo from "../components/EventInfo";
 
 const ContactSection = () => {
   return (
     <section id="contactSection">
-      <Box mb={20}>
-        <h2>Contact Section</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </Box>
+      <VStack px={8} py={24} bg={"black"}>
+        <Text color={"blue.500"} fontWeight={"semibold"}>
+          Kontak Kita
+        </Text>
+        <Heading color={"white"} textAlign={"center"}>
+          Kirim Pesan
+        </Heading>
+        <Text color={"white"} textAlign={"center"}>
+          Disini kamu bisa ngirim pesan via whatsapp ke admin kita lohh
+        </Text>
+
+        <SimpleGrid columns={[1, null, 2]} spacing={10} w={"100%"}>
+          <ContactWhatsapp />
+
+          <EventInfo />
+        </SimpleGrid>
+      </VStack>
     </section>
   );
 };
