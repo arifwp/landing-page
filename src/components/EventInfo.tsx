@@ -25,7 +25,7 @@ const EventInfo = () => {
       </HStack>
 
       <AspectRatio ratio={16 / 9} mt={4}>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d358.10308580414835!2d110.67762717567464!3d-7.530491268387491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1716881840695!5m2!1sen!2sid"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.4209307238666!2d110.6777817!3d-7.5289831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a6d3eb0bd5825%3A0x8661c45e26616318!2sBalai%20Desa%20Ketaon!5e0!3m2!1sen!2sid!4v1717057286251!5m2!1sen!2sid"></iframe>
       </AspectRatio>
     </VStack>
   );
