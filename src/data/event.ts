@@ -28,11 +28,11 @@ export const event : Event = {
     eventLogo: '/images/sponsors/coffe.png',
     eventTag: 'Music, Festival',
     eventDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    eventDate: 'Coming Soon',
+    eventDate: 'comingsoon',
     videoUrl: 'https://www.youtube.com/embed/QhBnZ6NPOY0',
-    generalAdminWhatsapp: '+6285728075282', // phone number must be start with +(country code)
+    generalAdminWhatsapp: '+6285728125290', // phone number must be start with +(country code)
     generalAdminName: 'Risa',
-    bazarAdminWhatsapp: '+6285157060174',
+    bazarAdminWhatsapp: '+6289057060174',
     bazarAdminName: 'Yuda',
     instagramLink: 'https://www.instagram.com/ketaon_fair/',
     youtubeLink: 'https://www.youtube.com/@manggalawijayaketaon2320',

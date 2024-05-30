@@ -19,6 +19,12 @@ export const sponsors: Array<Sponsor> = [
     isBig: true,
   },
   {
+    id: "sponsor-5",
+    imgUrl: "/images/sponsors/cocacola.png",
+    name: "Coca Cola",
+    isBig: true,
+  },
+  {
     id: "sponsor-3",
     imgUrl: "/images/sponsors/audi.png",
     name: "Audi",
@@ -29,12 +35,6 @@ export const sponsors: Array<Sponsor> = [
     imgUrl: "/images/sponsors/citibank.png",
     name: "Citibank",
     isBig: false,
-  },
-  {
-    id: "sponsor-5",
-    imgUrl: "/images/sponsors/cocacola.png",
-    name: "Coca Cola",
-    isBig: true,
   },
   {
     id: "sponsor-6",
