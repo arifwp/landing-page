@@ -1,4 +1,6 @@
 import { Container, Flex, Image, Text, VStack, Wrap } from "@chakra-ui/react";
+import Empty from "../components/Empty";
+import { event } from "../data/event";
 import { sponsors } from "../data/sponsors";
 import useScreenWidth from "../lib/useScreenWidth";
 
@@ -11,7 +13,7 @@ const HomeSection = () => {
         minH="100vh"
         maxW="100vw"
         backgroundImage="url('/images/bg_home.png')"
-        backgroundPosition="center"
+        backgroundPosition="left"
         backgroundSize="cover"
         backgroundRepeat="no-repeat"
         m={0}
@@ -22,15 +24,15 @@ const HomeSection = () => {
             <VStack>
               <Text
                 as="b"
-                fontSize={{ base: "42px", md: "102px", lg: "112px" }}
+                fontSize={{ base: "42px", md: "62px", lg: "112px" }}
                 color="white"
                 textAlign="center"
               >
-                LaLaLa Fest
+                {event.eventName}
               </Text>
               <Text
                 as="i"
-                fontSize={{ base: "14px", md: "32px", lg: "32px" }}
+                fontSize={{ base: "14px", md: "22px", lg: "32px" }}
                 color="white"
               >
                 Powered by :
@@ -57,12 +59,7 @@ const HomeSection = () => {
                 )}
               </Wrap>
             ) : (
-              <>
-                <Text color="white">~ Belum ada sponsor ~</Text>
-                <Text color="white">
-                  Hubungi kami jika berminat mensponsori event ini
-                </Text>
-              </>
+              <Empty componentName="sponsor" bigSponsor={true} />
             )}
           </VStack>
         </Flex>
