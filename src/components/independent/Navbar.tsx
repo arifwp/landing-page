@@ -16,7 +16,7 @@ import {
   Wrap,
   useDisclosure,
 } from "@chakra-ui/react";
-import { RiMenu3Line } from "@remixicon/react";
+import { RiCloseCircleLine, RiMenu3Line } from "@remixicon/react";
 import { HashLink } from "react-router-hash-link";
 import { event } from "../../data/event";
 import { navs } from "../../data/nav-list";
@@ -81,8 +81,20 @@ const Navbar = () => {
           />
           <Drawer onClose={onClose} isOpen={isOpen} size={"xs"}>
             <DrawerOverlay />
-            <DrawerContent bg={"#E53E3E"}>
-              <DrawerCloseButton />
+            <DrawerContent
+              bg="rgba(0, 0 ,0 ,0.5)"
+              backdropFilter="auto"
+              backdropBlur={"10px"}
+            >
+              <DrawerCloseButton>
+                <Icon
+                  as={RiCloseCircleLine}
+                  color={"red.500"}
+                  fontSize={"28px"}
+                  mt={4}
+                  mr={4}
+                ></Icon>
+              </DrawerCloseButton>
               <DrawerHeader>
                 <VStack>
                   <Image src={event.eventLogo} h="80px" />
@@ -101,6 +113,7 @@ const Navbar = () => {
                         colorScheme="red"
                         textColor="white"
                         variant="ghost"
+                        onClick={() => onClose()}
                       >
                         {nav.label}
                       </Button>
