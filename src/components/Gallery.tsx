@@ -68,7 +68,7 @@ const GallerySection = () => {
                           key={i}
                           _hover={{ cursor: "pointer" }}
                         >
-                          <GalleryItemModal src={img.src} />
+                          <GalleryItemModal src={img.src} alt={img.alt} />
                         </WrapItem>
                       ))}
                     </Wrap>

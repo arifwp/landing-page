@@ -16,9 +16,10 @@ import { downloadImage } from "../utils/helper";
 
 interface Props extends ImageProps {
   src: string;
+  alt: string;
 }
 
-export default function GalleryItemModal({ src }: Props) {
+export default function GalleryItemModal({ src, alt }: Props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -29,12 +30,18 @@ export default function GalleryItemModal({ src }: Props) {
         objectFit={"cover"}
         src={src}
         onClick={onOpen}
+        alt={alt}
+        loading="lazy"
       />
 
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
 
-        <ModalContent bgColor={"transparent"} w={"100%"}>
+        <ModalContent
+          bgColor={"transparent"}
+          w={"100%"}
+          boxShadow={"transparent"}
+        >
           <ModalBody>
             <Image src={src} />
             <ModalCloseButton mr={4} mt={1}>
