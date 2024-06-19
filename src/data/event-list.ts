@@ -21,7 +21,7 @@ export const eventList : Array<EventItem> = [
         location: 'Lapangan Desa Ketaon',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
         time: '13.00 - 17.00',
-        thumbnail: '/images/event/karnaval.jpg',
+        thumbnail: '/images/event/eventlist/karnaval.jpg',
         artist: [
             {
                 id: 'AR-001',
@@ -41,7 +41,7 @@ export const eventList : Array<EventItem> = [
         location: 'Bundaran HI',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
         time: '19.00 - 22.00',
-        thumbnail: '/images/event/anak.jpg',
+        thumbnail: '/images/event/eventlist/anak.jpg',
         artist: [
             {
                 id: 'AR-001',
@@ -66,7 +66,7 @@ export const eventList : Array<EventItem> = [
         location: 'Lapangan Desa Ketaon',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
         time: '20.00 - 24.00',
-        thumbnail: '/images/event/dangdut.jpg',
+        thumbnail: '/images/event/eventlist/dangdut.jpg',
         artist: [
             {
                 id: 'AR-001',
@@ -81,7 +81,7 @@ export const eventList : Array<EventItem> = [
         location: 'Depan Toko Darman',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
         time: '20.00 - 24.00',
-        thumbnail: '/images/event/ketoprak.jpg',
+        thumbnail: '/images/event/eventlist/ketoprak.jpg',
         artist: [
             {
                 id: 'AR-001',
