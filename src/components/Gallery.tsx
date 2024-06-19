@@ -1,5 +1,4 @@
 import {
-  Box,
   Collapse,
   Heading,
   Tab,
@@ -12,9 +11,9 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import { useState } from "react";
 import { imgGallery } from "../data/gallery-list";
 import GalleryItemModal from "./GalleryItemModal";
-import { useState } from "react";
 
 const GallerySection = () => {
   const [show, setShow] = useState(false);

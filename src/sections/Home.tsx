@@ -1,12 +1,7 @@
-import { Container, Flex, Image, Text, VStack, Wrap } from "@chakra-ui/react";
-import Empty from "../components/Empty";
+import { Container, Text, VStack } from "@chakra-ui/react";
 import { event } from "../data/event";
-import { sponsors } from "../data/sponsors";
-import useScreenWidth from "../lib/useScreenWidth";
 
 const HomeSection = () => {
-  const sw = useScreenWidth();
-
   return (
     <section id="homeSection">
       <Container
@@ -19,54 +14,23 @@ const HomeSection = () => {
         m={0}
         p={0}
       >
-        <Flex alignItems="center" minH="100vh">
-          <VStack w="100%" zIndex={2}>
-            <VStack>
-              <Text
-                as="b"
-                fontSize={{ base: "42px", md: "62px", lg: "112px" }}
-                color="white"
-                textAlign="center"
-              >
-                {event.eventNameWithYear}
-              </Text>
-
-              {/* <Text
-                as="i"
-                fontSize={{ base: "14px", md: "22px", lg: "32px" }}
-                color="white"
-                mt={4}
-              >
-                Powered by :
-              </Text> */}
-            </VStack>
-
-            {/* {sponsors.length > 0 ? (
-              <Wrap
-                alignItems="center"
-                spacingX={8}
-                spacingY={2}
-                justify={"center"}
-                mt={2}
-              >
-                {sponsors.map(
-                  (sponsor, i) =>
-                    sponsor.isBig && (
-                      <Image
-                        key={i}
-                        src={sponsor.imgUrl}
-                        alt={sponsor.name}
-                        h={sw <= 768 ? "20px" : "50px"}
-                        objectFit={"contain"}
-                      />
-                    )
-                )}
-              </Wrap>
-            ) : (
-              <Empty componentName="sponsor" bigSponsor={true} />
-            )} */}
-          </VStack>
-        </Flex>
+        <VStack
+          minH={"100vh"}
+          w="100%"
+          zIndex={2}
+          pt={"72px"}
+          justify={"center"}
+          backdropFilter={"blur(3px)"}
+        >
+          <Text
+            as="b"
+            fontSize={{ base: "42px", md: "62px", lg: "112px" }}
+            color="white"
+            textAlign="center"
+          >
+            {event.eventNameWithYear}
+          </Text>
+        </VStack>
       </Container>
     </section>
   );

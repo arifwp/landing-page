@@ -1,13 +1,6 @@
-import {
-  AspectRatio,
-  Box,
-  Container,
-  Image,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
-import { EventItem } from "../data/event-list";
+import { Box, Text, VStack } from "@chakra-ui/react";
 import React from "react";
+import { EventItem } from "../data/event-list";
 
 const CardEvent: React.FC<{ data: EventItem }> = (data) => {
   const item = data.data;
@@ -17,7 +10,6 @@ const CardEvent: React.FC<{ data: EventItem }> = (data) => {
       <Box
         h={"360px"}
         position="relative"
-        // bgImage="https://fakeimg.pl/800x600"
         bgImage={item.thumbnail}
         bgSize={"cover"}
         backgroundPosition={"center"}

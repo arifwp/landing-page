@@ -1,16 +1,8 @@
-import {
-  Heading,
-  Image,
-  SimpleGrid,
-  Text,
-  VStack,
-  Wrap,
-  WrapItem,
-} from "@chakra-ui/react";
+import { Heading, Image, Text, VStack, Wrap, WrapItem } from "@chakra-ui/react";
 import Empty from "../components/Empty";
+import { event } from "../data/event";
 import { sponsors } from "../data/sponsors";
 import useScreenWidth from "../lib/useScreenWidth";
-import { event } from "../data/event";
 
 const SponsorsSection = () => {
   const sw = useScreenWidth();

@@ -1,11 +1,4 @@
-import {
-  AspectRatio,
-  Box,
-  Heading,
-  SimpleGrid,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import { event } from "../data/event";
 

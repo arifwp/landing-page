@@ -10,7 +10,7 @@ import {
   VStack,
   WrapItem,
 } from "@chakra-ui/react";
-import { RiMap2Line, RiMapPin2Line, RiTimer2Line } from "@remixicon/react";
+import { RiMapPin2Line, RiTimer2Line } from "@remixicon/react";
 import React from "react";
 import { EventItem } from "../data/event-list";
 
