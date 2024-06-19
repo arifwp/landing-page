@@ -44,7 +44,7 @@ const Navbar = () => {
           fontWeight={"bold"}
           fontSize={{ base: "16px", md: "24px", lg: "32px" }}
         >
-          LaLaLa Fest
+          {event.eventName}
         </Text>
       </Box>
 
