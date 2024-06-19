@@ -38,13 +38,14 @@ const SponsorsSection = () => {
               flexWrap={"wrap"}
               spacing={"16px"}
               align={"center"}
+              direction={["column", "row"]}
             >
               {sponsors.map(
                 (item, i) =>
                   item.isBig && (
                     <WrapItem
                       flex={"1 1 auto"}
-                      w={sw >= 640 ? "200px" : "150px"}
+                      w={sw >= 640 ? "200px" : "175px"}
                       key={i}
                     >
                       <Image

@@ -28,22 +28,26 @@ const HomeSection = () => {
                 color="white"
                 textAlign="center"
               >
-                {event.eventName}
+                {event.eventNameWithYear}
               </Text>
-              <Text
+
+              {/* <Text
                 as="i"
                 fontSize={{ base: "14px", md: "22px", lg: "32px" }}
                 color="white"
+                mt={4}
               >
                 Powered by :
-              </Text>
+              </Text> */}
             </VStack>
-            {sponsors.length > 0 ? (
+
+            {/* {sponsors.length > 0 ? (
               <Wrap
                 alignItems="center"
                 spacingX={8}
                 spacingY={2}
                 justify={"center"}
+                mt={2}
               >
                 {sponsors.map(
                   (sponsor, i) =>
@@ -60,7 +64,7 @@ const HomeSection = () => {
               </Wrap>
             ) : (
               <Empty componentName="sponsor" bigSponsor={true} />
-            )}
+            )} */}
           </VStack>
         </Flex>
       </Container>

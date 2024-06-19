@@ -55,6 +55,7 @@ const Navbar = () => {
               <Button
                 key={i}
                 colorScheme="red"
+                textColor={"white"}
                 variant="ghost"
                 fontWeight={"semibold"}
               >

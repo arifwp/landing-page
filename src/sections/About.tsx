@@ -1,16 +1,18 @@
 import {
   HStack,
+  Heading,
   Icon,
-  Text,
-  VStack,
   Image,
   Link,
   SimpleGrid,
+  Text,
+  VStack,
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import useScreenWidth from "../lib/useScreenWidth";
 import { FaQuoteLeft } from "react-icons/fa";
+import { event } from "../data/event";
+import useScreenWidth from "../lib/useScreenWidth";
 
 const AboutSection = () => {
   const sw = useScreenWidth();
@@ -32,7 +34,7 @@ const AboutSection = () => {
           as={"b"}
           fontSize={{ base: "24px", md: "40px", lg: "68px" }}
         >
-          LaLaLa Fest itu apa sih?
+          {`${event.eventName} itu apa sih?`}
         </Text>
 
         <SimpleGrid columns={[1, null, 2]} spacingY={12} spacingX={20}>
@@ -42,23 +44,19 @@ const AboutSection = () => {
               fontSize={{ base: "12px", md: "14px", lg: "14px" }}
               mt={4}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              {event.eventDescription}
             </Text>
 
             <HStack align={"stretch"} mt={10}>
               <Icon as={FaQuoteLeft} fontSize={30} color={"red"}></Icon>
               <VStack align={"stretch"}>
-                <Text
+                <Heading
+                  as={"h4"}
                   color={"red"}
                   fontSize={{ base: "18px", md: "22px", lg: "22px" }}
                 >
                   Sujiwo Tejo
-                </Text>
+                </Heading>
                 <Text
                   color={"white"}
                   as={"i"}
@@ -83,9 +81,10 @@ const AboutSection = () => {
               fontSize={{ base: "12px", md: "14px", lg: "14px" }}
               spacing={4}
               mt={4}
+              display={"inline-block"}
             >
               <Link
-                href="https://www.instagram.com/ketaon_fair/"
+                href={event.instagramLink}
                 isExternal
                 style={{ textDecoration: "none" }}
               >
@@ -94,6 +93,9 @@ const AboutSection = () => {
                     bg: "red.500",
                     textColor: "black",
                     transform: "scale(1)",
+                    transformOrigin: "0 0",
+                    WebkitTransformOrigin: "0 0",
+                    msTransformOrigin: "0 0",
                     padding: "10px",
                     borderRadius: "10px",
                   }}
@@ -102,12 +104,13 @@ const AboutSection = () => {
                 >
                   <HStack>
                     <Image src="/images/logo/instagram.png" maxW={"16px"} />
-                    <Text>LaLaLa Fest</Text>
+                    <Text>{event.eventName}</Text>
                   </HStack>
                 </WrapItem>
               </Link>
+
               <Link
-                href="https://www.youtube.com/@manggalawijayaketaon2320"
+                href={event.youtubeLink}
                 isExternal
                 style={{ textDecoration: "none" }}
               >
@@ -124,12 +127,13 @@ const AboutSection = () => {
                 >
                   <HStack>
                     <Image src="/images/logo/youtube.png" maxW={"16px"} />
-                    <Text>LaLaLa Fest</Text>
+                    <Text>Manggla Wijaya</Text>
                   </HStack>
                 </WrapItem>
               </Link>
+
               <Link
-                href="https://www.tiktok.com/@ketaonfair"
+                href={event.tiktokLink}
                 isExternal
                 style={{ textDecoration: "none" }}
               >
@@ -146,7 +150,7 @@ const AboutSection = () => {
                 >
                   <HStack>
                     <Image src="/images/logo/tiktok.png" maxW={"16px"} />
-                    <Text>LaLaLa Fest</Text>
+                    <Text>{event.eventName}</Text>
                   </HStack>
                 </WrapItem>
               </Link>
@@ -154,7 +158,7 @@ const AboutSection = () => {
           </VStack>
 
           <HStack justify={"center"} px={12} spacing={10}>
-            <Image src="/images/thumbnailArtist.png" w={"660px"} />
+            <Image src="/images/thumbnailArtist.png" w={"160px"} />
 
             <VStack
               color={"white"}
@@ -166,7 +170,7 @@ const AboutSection = () => {
                 fontSize={{ base: "18px", md: "22px", lg: "26px" }}
                 color={"red"}
               >
-                1500+
+                {event.totalVisitor}
               </Text>
               <Text fontSize={{ base: "10px", md: "16px", lg: "20px" }}>
                 Pengunjung
@@ -176,7 +180,7 @@ const AboutSection = () => {
                 color={"red"}
                 mt={8}
               >
-                6
+                {event.totalSponsor}
               </Text>
               <Text fontSize={{ base: "10px", md: "16px", lg: "20px" }}>
                 Sponsor
@@ -186,7 +190,7 @@ const AboutSection = () => {
                 color={"red"}
                 mt={8}
               >
-                15
+                {event.totalMediaPartner}
               </Text>
               <Text fontSize={{ base: "10px", md: "16px", lg: "20px" }}>
                 Media Partner
