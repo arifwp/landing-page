@@ -11,7 +11,7 @@ const Event: React.FC<{ data: EventItem }> = (data) => {
       minH={"300px"}
       minW={"260px"}
       position="relative"
-      bgImage={item.thumbnail}
+      backgroundImage={item.thumbnail}
       bgSize={"cover"}
       backgroundPosition={"center"}
     >
