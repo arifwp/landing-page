@@ -1,6 +1,7 @@
-import { Text, VStack } from "@chakra-ui/react";
+import { HStack, Image, Text, VStack, Wrap, WrapItem } from "@chakra-ui/react";
 import { CContainer } from "../components/CContainer";
 import { event } from "../data/event";
+import { sponsors } from "../data/sponsors";
 
 const HomeSection = () => {
   return (
@@ -18,10 +19,9 @@ const HomeSection = () => {
           <VStack
             minH={"100vh"}
             w="100%"
-            zIndex={2}
             pt={"72px"}
             justify={"center"}
-            backdropFilter={"blur(3px)"}
+            backdropFilter={"blur(2px)"}
           >
             <Text
               as="b"
@@ -31,6 +31,35 @@ const HomeSection = () => {
             >
               {event.eventNameWithYear}
             </Text>
+
+            {/* <VStack mt={4} mx={"auto"}>
+              <Text fontSize={"16px"} color={"white"} as={"i"}>
+                Powered by :
+              </Text>
+
+              <HStack mt={4}>
+                <Image
+                  w={"100%"}
+                  maxW={"120px"}
+                  objectFit={"contain"}
+                  src={"images/sponsors/spotify.png"}
+                />
+
+                <Image
+                  w={"100%"}
+                  maxW={"120px"}
+                  objectFit={"contain"}
+                  src={"images/sponsors/audi.png"}
+                />
+
+                <Image
+                  w={"100%"}
+                  maxW={"120px"}
+                  objectFit={"contain"}
+                  src={"images/sponsors/cocacola.png"}
+                />
+              </HStack>
+            </VStack> */}
           </VStack>
         </VStack>
       </section>

@@ -74,41 +74,6 @@ const SponsorsSection = () => {
                     )
                 )}
               </Wrap>
-
-              {/* <SimpleGrid columns={[2, null, 3]} spacing={10} mt={10}>
-              {sponsors.map(
-                (sponsor, i) =>
-                  sponsor.isBig && (
-                    <Image
-                      key={sponsor.id}
-                      src={sponsor.imgUrl}
-                      alt={sponsor.name}
-                      objectFit={"contain"}
-                      my={"auto"}
-                      maxW={"120px"}
-                    />
-                  )
-              )}
-            </SimpleGrid>
-
-            <Wrap>
-              {sponsors.map(
-                (sponsor, i) =>
-                  !sponsor.isBig && (
-                    <WrapItem key={sponsor.id}>
-                      <Image
-                        key={sponsor.id}
-                        src={sponsor.imgUrl}
-                        alt={sponsor.name}
-                        objectFit={"contain"}
-                        my={"auto"}
-                        maxW={"40px"}
-                        onClick={(e) => console.log(sponsor.id)}
-                      />
-                    </WrapItem>
-                  )
-              )}
-            </Wrap> */}
             </>
           ) : (
             <Empty componentName="sponsor" bigSponsor={false} />
