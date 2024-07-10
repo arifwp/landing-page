@@ -36,7 +36,7 @@ const ScheduleItem: React.FC<{ data: EventItem }> = (props) => {
           </AspectRatio>
           <VStack align={"stretch"}>
             <Text color="red.500" fontSize="10px" mt={4}>
-              Festival, Music
+              {item.tag}
             </Text>
             <Heading as={"h5"} size={"sm"} color={"white"} mt={-1.5}>
               {item.name}
