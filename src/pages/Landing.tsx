@@ -1,9 +1,8 @@
-import React from "react";
-import HomeSection from "../sections/Home";
-import ContactSection from "../sections/Contact";
-import AboutSection from "../sections/About";
-import ScheduleSection from "../sections/Schedule";
 import GallerySection from "../components/Gallery";
+import AboutSection from "../sections/About";
+import ContactSection from "../sections/Contact";
+import HomeSection from "../sections/Home";
+import ScheduleSection from "../sections/Schedule";
 import SponsorsSection from "../sections/Sponsors";
 
 export default function Landing() {

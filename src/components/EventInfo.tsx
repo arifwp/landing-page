@@ -21,7 +21,7 @@ const EventInfo = () => {
       </Text>
       <HStack spacing={2}>
         <Icon as={RiMapPin2Line} color={"white"}></Icon>
-        <Text color={"white"}>Depan Tugu KB Desa Ketaon</Text>
+        <Text color={"white"}>{event.eventBaseCampLocation}</Text>
       </HStack>
 
       <AspectRatio ratio={16 / 9} mt={4}>
